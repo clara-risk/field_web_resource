@@ -258,6 +258,8 @@ var allsites = {
 ]
 }
 
+map.addControl(new mapboxgl.ScaleControl(), 'bottom-left');
+
 map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
 
 map.on('load', function() {
@@ -808,6 +810,8 @@ const coordinatesGeocoder = function (query) {
       }),
       "bottom-right"
   );
+
+
 
 function copyCoordsToClipBoard() {
   /* Get the text field */
