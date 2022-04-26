@@ -43,22 +43,27 @@
 <div><span style="background-color: #FFC107"></span>2009</div>
 </div>
 
-<div class = "infobox">
+
+<div class="topbanner"> 
     <div class="infobutton">i
-        <h5 class="infotooltip">Created with data from the Government of Ontario (Land Information Ontario) (study area), and Beaudoin et al. (2014): https://doi.org/10.1139/cjfr-2013-0401. Map created with Mapbox GL JS.<h5></div> 
+        <h5 class="infotooltip">Created with data from the Government of Ontario (Land Information Ontario) (study area), and Beaudoin et al. (2014): https://doi.org/10.1139/cjfr-2013-0401. Map created with Mapbox GL JS.<h5>
+    </div> 
+    
+    <div class="dropdownMenu">
+        <button class="dropdownButton" onclick="displaySelectionMenu()">Select sites
+            <i id = "arrow" class="arrow-down"></i>
+        </button>
+        <nav id="menu"></nav>  
     </div>
+
+    <div id="coordinateBox" onclick=copyCoordsToClipBoard()>
+        <pre id= "coords">00.0000, -00.0000</pre>
+    </div>
+        
+    <div id="distance" class="distance-container"></div>
 </div>
 
-
-<div id="legend" class="legend">
-<div id="distance" class="distance-container"></div>
 <!-- <div class="bar"></div> --> 
-
-<div id="coordinateBox" onclick=copyCoordsToClipBoard()>
-    <pre id= "coords">00.0000, -00.0000</pre>
-</div>
-
-<nav id="menu"></nav>  
 <!-- <nav id="tstamp"></nav> --> 
 
 	<!-- <div id='info'><h2>Zoom in to see more detailed forest stand information<br>and click to see stand type</h2></div> -->
