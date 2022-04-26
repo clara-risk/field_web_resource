@@ -11,6 +11,8 @@ container: 'map',
 style: 'mapbox://styles/mapbox/satellite-streets-v11',
 center: [-82.48, 48.6],
 zoom:6,
+logoPosition: "top-right",
+attributionControl: false
 });
 
 var Harvest = {
@@ -258,7 +260,7 @@ var allsites = {
 ]
 }
 
-map.addControl(new mapboxgl.ScaleControl(), 'bottom-left');
+map.addControl(new mapboxgl.ScaleControl(), 'bottom-right');
 
 map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
 
@@ -797,20 +799,35 @@ const coordinatesGeocoder = function (query) {
       
       return geocodes;
   };
-      
-      // Add the control to the map.
-  map.addControl(
-      new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        localGeocoder: coordinatesGeocoder,
-        zoom: 4,
-        placeholder: 'Earth Sciences centre',
-        mapboxgl: mapboxgl,
-        reverseGeocode: true
-      }),
-      "bottom-right"
-  );
 
+
+// ######## TOP BANNER #########
+map.addControl(new mapboxgl.AttributionControl(), 'top-right');
+
+// Add the control to the map.
+map.addControl(
+  new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    localGeocoder: coordinatesGeocoder,
+    zoom: 4,
+    placeholder: 'Earth Sciences centre',
+    mapboxgl: mapboxgl,
+    reverseGeocode: true
+  }),
+  "top-right"
+);
+
+function displaySelectionMenu() {
+  var dropDownArrow = document.getElementById("arrow");
+  if (dropDownArrow.classList.contains('arrow-down')) {
+    dropDownArrow.classList.remove('arrow-down');
+    dropDownArrow.classList.add('arrow-up');
+  } else {
+    dropDownArrow.classList.add('arrow-down');
+    dropDownArrow.classList.remove('arrow-up');
+  }
+  document.getElementById("menu").classList.toggle("show");
+}
 
 
 function copyCoordsToClipBoard() {
