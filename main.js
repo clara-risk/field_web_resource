@@ -275,7 +275,9 @@ map.on('load', function() {
       id: 'North Bay Option 2',
       type: 'fill',
       source: 'Harvest',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -301,7 +303,9 @@ map.on('load', function() {
       id: 'North Bay Option 1',
       type: 'fill',
       source: 'ca1',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -328,7 +332,9 @@ map.on('load', function() {
       id: 'North Bay Option 3',
       type: 'fill',
       source: 'ca2',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -354,7 +360,9 @@ map.on('load', function() {
       id: 'Timmins Option 1',
       type: 'fill',
       source: 'ca3',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -383,7 +391,9 @@ map.on('load', function() {
       id: 'Timmins Option 2',
       type: 'fill',
       source: 'ca4',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -412,7 +422,9 @@ map.on('load', function() {
       id: 'Timmins Option 3',
       type: 'fill',
       source: 'ca5',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -441,7 +453,9 @@ map.on('load', function() {
       id: 'Kenora Option 1',
       type: 'fill',
       source: 'ca6',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -472,7 +486,9 @@ map.on('load', function() {
       id: 'Kenora Option 2',
       type: 'fill',
       source: 'ca7',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color':[
@@ -503,7 +519,9 @@ map.on('load', function() {
       id: 'Kenora Option 3',
       type: 'fill',
       source: 'fire1',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
@@ -533,7 +551,9 @@ map.on('load', function() {
       id: 'JPB - All Potential Sites',
       type: 'fill',
       source: 'allsites',
-      'layout': {},
+      'layout': {
+        'visibility': 'visible',
+      },
       'paint': {
         // this specifies how we style our data
 		'fill-color': [
